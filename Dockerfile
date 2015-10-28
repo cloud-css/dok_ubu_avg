@@ -25,6 +25,7 @@ RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 #    && sed -i 's/exit 101/exit 0/' /usr/sbin/policy-rc.d \
     && curl -sSL "http://download.avg.com/filedir/inst/avg2013flx-r3118-a6926.i386.deb" -o avg2013flx.i386.deb \
 	&& dpkg -i avg2013flx.i386.deb
+    && rm avg2013flx.i386.deb
 #   && sed -i 's/exit 0/exit 101/' /usr/sbin/policy-rc.d \
 #   && avgupdate
 
